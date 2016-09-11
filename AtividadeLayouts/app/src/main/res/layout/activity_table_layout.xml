@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="2"
+    tools:context="br.cesed.atividadelayouts.TableLayoutActivity">
+
+    <TableRow android:padding="5dip">
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Protocolos Facisa"
+            android:typeface="serif"
+            android:layout_span="2"
+            android:gravity="center_horizontal"
+            android:textSize="20dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teste"
+            android:id="@+id/textView2"
+            android:layout_column="2" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:layout_column="0"/>
+        <EditText
+            android:id="@+id/prod_code"
+            android:layout_height="wrap_content"
+            android:layout_column="1"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Matrícula"
+            android:layout_column="0"/>
+        <EditText
+            android:id="@+id/prod_name"
+            android:layout_height="wrap_content"
+            android:scrollHorizontally="true" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Assunto" />
+        <EditText
+            android:id="@+id/prod_price"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test"
+            android:id="@+id/button9"
+            android:layout_column="2" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/add_button"
+            android:text="Adicionar"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/cancel_button"
+            android:text="Cancelar"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/Test1_button"
+            android:text="Teste1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/Test2_button"
+            android:text="Teste2"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RatingBar android:id="@+id/ratingBar"
+            android:layout_column="1" />
+    </TableRow>
+
+</TableLayout >
